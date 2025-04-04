@@ -1,0 +1,92 @@
+{
+    "name": "Jane Doe",
+    "contact": {
+      "phone": "+1 555-123-4567",
+      "email": "jane.doe@example.com",
+      "linkedin": "https://linkedin.com/in/janedoe",
+      "github": "https://github.com/janedoe",
+      "location": "City, Country"
+    },
+    "education": [
+      {
+        "degree": "MSc Example Studies",
+        "school": "University of Example",
+        "location": "City, Country",
+        "dates": "Sep 2024 – Present",
+        "courses": [
+          "Data Ecosystems",
+          "Machine Learning",
+          "Optimization",
+          "Big Data Analysis",
+          "Advanced Programming for Data Science"
+        ]
+      },
+      {
+        "degree": "BSc Example and Instances",
+        "school": "Example Business School",
+        "location": "City, Country",
+        "dates": "Sep 2019 – Dec 2022",
+        "courses": [
+          "Economics",
+          "Statistics",
+          "Management",
+          "Marketing",
+          "Cultural Anthropology"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "title": "Data Science Consultant (Student Project)",
+        "company": "HealthAid International",
+        "location": "City, Country",
+        "dates": "Nov 2024 – Present",
+        "description": [
+          "Worked closely with HealthAid International to design and implement a data-driven solution aimed at enhancing donor engagement and retention.",
+          "Conducted an in-depth analysis of historical donation data to uncover trends, patterns, and key factors influencing donor behavior.",
+          "Developed and deployed machine learning models, including clustering algorithms, to segment donors into actionable groups based on their giving patterns and preferences.",
+          "Proposed targeted outreach strategies tailored to each donor segment, leveraging insights from data analysis to improve personalization and engagement.",
+          "Created interactive dashboards and visualizations to communicate findings and recommendations effectively to stakeholders.",
+          "Collaborated with a multidisciplinary team to ensure the solution aligned with the nonprofit's mission and operational goals."
+
+        ]
+      },
+      {
+        "title": "Finance Intern",
+        "company": "TechCorp Europe",
+        "location": "City, Country",
+        "dates": "Jan 2023 – Mar 2024",
+        "description": [
+          "Assisted with budgeting, forecasting, and reporting within the finance team.",
+          "Worked with Excel, Power BI, and SAP to analyze and visualize financial data.",
+          "Developed dashboards and automated reports to support decision-making processes.",
+          "Collaborated with cross-functional teams to gather and validate financial data for analysis.",
+          "Identified cost-saving opportunities by analyzing expense trends and providing actionable insights.",
+          "Supported the preparation of monthly and quarterly financial statements for internal and external stakeholders.",
+          "Participated in financial audits and ensured compliance with corporate policies and regulations."
+        ]
+      },
+      {
+        "title": "Co-founder",
+        "company": "Lemonade Tycoon Inc.",
+        "location": "City, Country",
+        "dates": "Mar 2022 – Jan 2023",
+        "description": [
+          "Revolutionized the lemonade industry by establishing a cutting-edge lemonade stand on the corner of Main Street.",
+          "Pioneered innovative lemon-squeezing techniques to maximize juice extraction and customer satisfaction.",
+          "Crafted a secret lemonade recipe that allegedly 'changed lives' (according to one very enthusiastic customer).",
+          "Developed a robust marketing strategy involving hand-drawn signs and strategic placement of free samples.",
+          "Analyzed sales data to determine the optimal balance of sugar and lemons, achieving a 200% increase in repeat customers.",
+          "Negotiated high-stakes deals with local fruit vendors to secure the freshest lemons at competitive prices.",
+          "Managed a dynamic team of one (myself) while maintaining a perfect work-life balance under the shade of a beach umbrella."
+        ]
+      }
+    ],
+    "skills": {
+      "software": ["Microsoft Excel", "Power BI", "Python", "SQL", "Tableau"],
+      "tech": ["Statistical Analysis", "Data Visualization", "Machine Learning", "Predictive Modeling", "Time Series Forecasting"],
+      "languages": ["English (Native)", "Spanish (Basic)"],
+      "libraries": ["Pandas", "NumPy", "Matplotlib", "Seaborn", "Scikit-learn", "Statsmodels", "TensorFlow", "Keras", "Plotly", "BeautifulSoup", "Flask"]
+    },
+    "hobbies": ["Music", "Gaming", "Digital Art", "Sports"]
+  }

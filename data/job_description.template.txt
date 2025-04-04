@@ -1,0 +1,33 @@
+Data Analyst Intern  
+TechNova Inc. · Lisbon, Portugal (Hybrid)  
+Internship · Posted April 1, 2025
+
+TechNova Inc. is seeking a highly motivated and detail-oriented Data Analyst Intern to join our Business Intelligence team. This internship is a unique opportunity to work with large-scale datasets and support strategic decision-making across multiple departments.
+
+As a Data Analyst Intern, you will assist in collecting, cleaning, and analyzing data to extract meaningful insights. You will work closely with data scientists, analysts, and business stakeholders to help build dashboards, generate reports, and support ongoing projects.
+
+**Key Responsibilities:**
+- Analyze large datasets to identify patterns, trends, and opportunities
+- Build and maintain interactive dashboards and automated reports
+- Assist with A/B testing and experimental data analysis
+- Collaborate with cross-functional teams to understand data needs and business goals
+- Present findings in a clear and visual manner to both technical and non-technical audiences
+
+**Qualifications:**
+- Currently pursuing a Bachelor’s or Master’s degree in Data Science, Economics, Statistics, Business Analytics, or related field
+- Strong proficiency in Microsoft Excel and SQL
+- Experience with Python or R is a plus
+- Familiarity with data visualization tools such as Tableau or Power BI
+- Excellent communication skills and a strong analytical mindset
+- Fluency in English
+
+**Preferred Qualifications:**
+- Experience with version control systems like Git
+- Understanding of basic statistical methods and experimentation
+- Curiosity, problem-solving attitude, and eagerness to learn
+
+Join us at TechNova and gain hands-on experience in a dynamic, data-driven environment. This internship will provide real-world experience and the opportunity to contribute to impactful projects.
+
+Duration: 3–6 months  
+Compensation: Paid  
+Application Deadline: April 30, 2025
