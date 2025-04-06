@@ -25,7 +25,7 @@ Refer to the [Usage](#usage) section below for a detailed setup guide.
 
 ### Step-by-step Guide
 
-1. **Clone this repository** to your machine (or [download the zip](https://github.com/your-repo-link)):
+1. **Clone this repository** to your machine (or [download the zip](https://github.com/edoadro/cv_optimizer/archive/refs/heads/main.zip)):
 
     ```bash
     git clone <put-repository-link>
