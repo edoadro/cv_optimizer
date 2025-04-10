@@ -180,3 +180,6 @@ templates/~$_template.docx
 templates/cv_template.docx
 data/profile.json
 data/job_description.txt
+cv_env/
+templates/~$ver_letter_template.docx
+templates/cover_letter_template.docx
