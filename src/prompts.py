@@ -71,6 +71,35 @@ Make absolutely sure that the output is only words that are present in the skill
 {skills_data}
 """
     return prompt
+
+def cover_letter_prompt(user_data, job_description):
+    return f"""You are a professional CV writer.
+Write a concise and compelling cover letter tailored to this job description, based on the following candidate's profile. Keep it professional and follo the provided structure:
+
+=== STRUCTURE ===
+1st Paragraph – Introduction (3/4 lines)
+ Answer to: Who are you? What are you doing now? What are you looking to do in the near future?
+e.g. “My name is Anna, I am currently in the second year of my Bachelor in Economics at Nova School of Business and Economics, and through my studies I have become increasingly interested in the Sales and Marketing areas, within which I would like to further my knowledge and practical experiences.“
+
+2nd Paragraph – Motivation (5/6 lines)
+ Answer to: Why are you interested specifically in this Job Role? And why this particular Organisation?
+
+3rd / 4th Paragraph – Showcase Alignment, focusing on skills (5/6 lines each paragraph)
+ Answer to: Why should this Organisation hire you?
+e.g. “The teamwork skills I developed as a student at Nova SBE, have allowed me to establish positive and efficient work relationships with people from various backgrounds, which could prove valuable in [OrganisationName]'s worldwide implementation projects.”
+
+Last Paragraph – Conclusion (3/4 lines)
+ Answer to: Thank the reader, reaffirm your interest, end with a call to action.
+e.g. “Thank you for taking the time to consider my application. The prospect of contributing to [CompanyName] truly excites me, since my passion for [SpecificCharacteristic] aligns seamlessly with [CompanyName]’s vision. In this sense, I would be happy to further discuss my background and relevant achievements with you in an interview.”
+
+Complimentary Close: “Sincerely,” / “Best Regards,” / “Yours Respectfully,”
+
+=== JOB DESCRIPTION ===
+{job_description}
+
+=== CANDIDATE PROFILE ===
+{user_data}
+"""
     
 def main():
     with open("data/profile.json", "r") as f:

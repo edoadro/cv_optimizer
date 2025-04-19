@@ -1,8 +1,16 @@
+"""
+This module provides an interface to interact with different LLM backends (Gemini and Ollama).
+It allows for generating content based on user data and job descriptions.
+"""
+
 import json
 import os
 import google.generativeai as genai
 import ollama
-from prompts import about_prompt, experience_prompt, courses_prompt, skills_prompt
+from pydantic import BaseModel
+
+# 
+from prompts import about_prompt, experience_prompt, courses_prompt, skills_prompt, cover_letter_prompt
 
 # Configuration: Choose "gemini" or "ollama"
 LLM_BACKEND = os.getenv("LLM_BACKEND", "ollama")  # default is ollama
@@ -64,6 +72,38 @@ def generate_content(placeholder, user_data, job_description):
 
     else:
         return "error: unknown placeholder"
+    
+def generate_cover_letter(user_data, job_description, complete=False):
+    
+    class CoverLetterInfo(BaseModel):
+        recipient: str
+        company_name: str
+        company_location: str
+        cover_letter: str
+
+    
+    prompt = cover_letter_prompt(user_data, job_description)
+    
+    response = ollama.chat(
+        messages=[
+            {
+                'role': 'user', 
+                'content': prompt
+            }
+        ],
+        model=OLLAMA_MODEL,
+        format=CoverLetterInfo.model_json_schema()
+    )
+    
+    letter_info = CoverLetterInfo.model_validate_json(response['message']['content'])
+
+    complete_cover_letter = f"""
+        Dear {letter_info.recipient},
+        I am writing to express my interest in the {letter_info.company_name} position located in {letter_info.company_location}.
+        {letter_info.cover_letter}
+    """
+    
+    return complete_cover_letter if complete else letter_info
 
 def main():
     with open("data/profile.json") as f:
@@ -74,17 +114,21 @@ def main():
 
     print("Using backend:", LLM_BACKEND)
 
-    print("\nAbout Section:")
-    print(generate_content("{{about}}", user_data, job_description))
+    # print("\nAbout Section:")
+    # print(generate_content("{{about}}", user_data, job_description))
 
-    print("\nExperience Section:")
-    print(generate_content("{{exp1}}", user_data, job_description))
+    # print("\nExperience Section:")
+    # print(generate_content("{{exp1}}", user_data, job_description))
 
-    print("\nCourses Section:")
-    print(generate_content("{{courses1}}", user_data, job_description))
+    # print("\nCourses Section:")
+    # print(generate_content("{{courses1}}", user_data, job_description))
 
-    print("\nSkills Section:")
-    print(generate_content("{{software}}", user_data, job_description))
+    # print("\nSkills Section:")
+    # print(generate_content("{{software}}", user_data, job_description))
+    
+    print("\nCover Letter:")
+    print(generate_cover_letter(user_data, job_description))
+    print("\n=== END ===")
 
 if __name__ == "__main__":
     main()
